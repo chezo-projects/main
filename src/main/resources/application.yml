@@ -1,0 +1,19 @@
+spring:
+  #Email config
+  mail:
+    host: ${EMAIL_HOST}
+    port: ${EMAIL_PORT}
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+            required: false
+          ssl:
+            enable: true
+    protocol: smtp
+
+google-recaptcha-secret: ${GOOGLE_RECAPTCHA_SECRET}
+github-authorization-token: ${GITHUB_AUTHORIZATION_TOKEN}
